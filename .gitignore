@@ -1,0 +1,11 @@
+*.txt
+*.zip
+*.class
+*.cache
+*.org
+*.log
+*.heapsnapshot
+node_modules/
+exercise/
+data/feedback.json
+node_modules_linux/
