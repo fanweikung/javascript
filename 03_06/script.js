@@ -32,3 +32,13 @@ console.log("The strap length L: ", backpack.strapLength.left);
 var query = "pocketNum";
 
 console.log("Use bracket notation to get the pocketNum:", backpack[query]);
+
+// change lid open/close
+// toggle the lid directly on the console to see the value changes in the browser
+console.log("The lid is open:", backpack.lidOpen);
+backpack.toggleLid("true");
+console.log("The lid is open:", backpack.lidOpen);
+// change L strap length
+console.log("The strap length L before: ", backpack.strapLength.left);
+backpack.newStrapLength(15, 15);
+console.log("The strap length L after: ", backpack.strapLength.left);
