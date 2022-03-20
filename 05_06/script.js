@@ -2,6 +2,8 @@
  * Traverse the DOM tree using querySelector() and querySelectorAll()
  * @link https://developer.mozilla.org/en-US/docs/Web/API/Element/querySelector
  * @link https://developer.mozilla.org/en-US/docs/Web/API/Element/querySelectorAll
+ * @link https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement
+ * @link
  */
 
 import Backpack from "./Backpack.js";
@@ -19,7 +21,6 @@ const everydayPack = new Backpack(
 );
 
 const content = `
-  <article class="backpack" id="everyday">
     <figure class="backpack__image">
       <img src=${everydayPack.image} alt="" />
     </figure>
@@ -45,9 +46,15 @@ const content = `
         everydayPack.lidOpen
       }</span></li>
     </ul>
-  </article>
 `;
 
 const main = document.querySelector(".maincontent");
 
-main.innerHTML = content;
+//   <article class="backpack" id="everyday">
+const newArticle = document.createElement("article");
+newArticle.classList.add("backpack");
+newArticle.setAttribute("id", "everyday");
+
+newArticle.innerHTML = content;
+// ParentNode.append()
+main.append(newArticle);
