@@ -4,7 +4,7 @@
  * @link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/
  */
 
-let color = "purple";
+const color = "purple";
 
 document.querySelector(".left").style.backgroundColor = color;
 document.querySelector(".left .color-value").innerHTML = color;
