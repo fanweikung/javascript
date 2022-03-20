@@ -19,5 +19,7 @@ function headingColor() {
 
 headingColor();
 
+console.log("outside: ", titleColor);
+
 document.querySelector(".right").style.backgroundColor = color;
 document.querySelector(".right .color-value").innerHTML = color;
