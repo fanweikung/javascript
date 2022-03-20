@@ -18,8 +18,6 @@ const everydayPack = new Backpack(
   "../assets/images/everyday.svg"
 );
 
-const main = document.querySelector(".maincontent");
-
 const content = `
   <article class="backpack" id="everyday">
     <figure class="backpack__image">
@@ -49,5 +47,7 @@ const content = `
     </ul>
   </article>
 `;
+
+const main = document.querySelector(".maincontent");
 
 main.innerHTML = content;
