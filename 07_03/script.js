@@ -5,7 +5,7 @@
 
 let backpackContents = ["piggy", "headlamp", "pen"];
 
-backpackContents.unshift("pencil", 5);
+backpackContents.shift();
 
 console.log(backpackContents);
 
