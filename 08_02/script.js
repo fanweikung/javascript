@@ -10,7 +10,7 @@ function doSomeMath(a, b) {
 }
 
 // Function expression:
-const doMoreMath = function (a = 3, b = 2) {
+const doMoreMath = function (a, b) {
   let c = a * b;
   return c;
 };
