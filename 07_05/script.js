@@ -14,8 +14,8 @@ const deskArray = [
   "phone",
   "notebook",
   "headphones",
-  "lightbulb",
-  "usb drive",
+  "Lightbulb",
+  "Usb drive",
 ];
 console.log("Original array:", deskArray);
 
