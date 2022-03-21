@@ -5,7 +5,9 @@
 
 let backpackContents = ["piggy", "headlamp", "pen"];
 
-console.log(backpackContents.join(" | "));
+backpackContents.push("pencil", 5);
+
+console.log(backpackContents);
 
 // backpackContents.forEach(function (item) {
 //   item = `<li>${item}</li>`;
