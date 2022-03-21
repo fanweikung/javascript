@@ -4,7 +4,7 @@
  */
 
 let a = 5;
-let b = "5";
+let b = "five";
 
 console.log(`let a: ${a} (${typeof a})`);
 console.log(`let b: ${b} (${typeof b})`);
