@@ -4,7 +4,7 @@
  */
 
 let a = 15;
-let b = 4;
+let b = "4";
 let c = 3.2;
 
 console.log(`let a: ${a} (${typeof a})`);
@@ -13,5 +13,4 @@ console.log(`let c: ${c} (${typeof c})`);
 
 let result = a + b;
 
-console.log("Result: ", a--);
-console.log(a);
+console.log("Result: ", result);
