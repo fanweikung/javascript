@@ -16,7 +16,12 @@ const greenPack = {
     console.log("this.volume in the method:", this.volume);
     this.volume = volume;
     console.log("this.volume after update:", this.volume);
+    // function hoisted to the global scope; this = windoow
     (function () {
+      console.log("this.volume in nested function:", this.volume);
+    })();
+    // arrow function uses the closest available scope = object
+    (() => {
       console.log("this.volume in nested function:", this.volume);
     })();
   },
