@@ -36,7 +36,7 @@ console.log("Original array:", deskArray);
 
 // Find "notebook":
 // @link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find
-const foundItem = deskArray.find((item) => item === "notebook");
+const foundItem = deskArray.find((item) => item === "cat");
 console.log("Found item:", foundItem);
 
 // Find and remove an item:
