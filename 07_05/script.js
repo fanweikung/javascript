@@ -21,7 +21,7 @@ console.log("Original array:", deskArray);
 
 // Remove the last item:
 // @link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop
-deskArray.pop();
+console.log(deskArray.pop());
 console.log("New array:", deskArray);
 
 // Add last item as the first item on the array:
