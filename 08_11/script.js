@@ -1,7 +1,6 @@
 /**
- * Create a new element and append it to the <main> element.
- * @link https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement
- * @link https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/append
+ * Switch statement
+ * @link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch
  */
 
 import Backpack from "./Backpack.js";
@@ -55,8 +54,32 @@ newArticle.innerHTML = content;
 
 main.append(newArticle);
 
-if (everydayPack.backpackAge() >= 30) {
-  console.log("Backpack is used");
-} else {
-  console.log("Backpack is new");
-}
+const usedStatus = () => {
+  let age = everydayPack.backpackAge();
+  age = 1095;
+  let description;
+
+  switch (true) {
+    case age < 30:
+      description = "new";
+      break;
+    case age >= 30 && age < 365:
+      description = "lightly used";
+      break;
+    case age >= 365 && age < 1095:
+      description = "used";
+      break;
+    case age >= 1095:
+      description = "old";
+      break;
+    default:
+      console.log(`There is no description for ${age}.`);
+  }
+
+  console.log(`
+  Age: ${age} days
+  Status: ${description}
+  `);
+};
+
+usedStatus();
