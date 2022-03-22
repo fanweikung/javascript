@@ -55,10 +55,8 @@ newArticle.innerHTML = content;
 
 main.append(newArticle);
 
-if (everydayPack.lidOpen) {
-  console.log("lid is open");
+if (everydayPack.backpackAge() >= 30) {
+  console.log("Backpack is used");
 } else {
-  console.log("lid is closed :(");
+  console.log("Backpack is new");
 }
-// ternary operator
-console.log(everydayPack.lidOpen ? "lid is open" : "lid is closed > _ <");
