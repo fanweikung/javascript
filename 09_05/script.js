@@ -76,9 +76,9 @@ const backpackList = backpackObjectArray.map((backpack) => {
   button.addEventListener("click", (event) => {
     console.log(event);
     // ternary operator
-    button.innerText === "Open lid"
-      ? (button.innerText = "Close lid")
-      : (button.innerText = "Open lid");
+    this.innerText === "Open lid"
+      ? (this.innerText = "Close lid")
+      : (this.innerText = "Open lid");
 
     status.innerText === "open"
       ? (status.innerText = "closed")
